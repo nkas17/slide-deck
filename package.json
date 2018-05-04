@@ -1,0 +1,19 @@
+{
+  "name": "slide-deck",
+  "version": "1.0.0",
+  "description": "slide deck application - used as a presentation tool to show what it's like to develop the UI with React",
+  "main": "./src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nkas17/slide-deck.git"
+  },
+  "author": "nathanmweller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nkas17/slide-deck/issues"
+  },
+  "homepage": "https://github.com/nkas17/slide-deck#readme"
+}
