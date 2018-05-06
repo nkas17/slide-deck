@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main renders correctly 1`] = `
+<main>
+  <div
+    className="row ao-top-32"
+  >
+    <div
+      className="column"
+    >
+      <div
+        className="ao-contentbox"
+      >
+        <img
+          alt="react"
+          className="ao-float-left ao-right-48"
+          height="180"
+          src="./assets/react.png"
+          width="200"
+        />
+        <h1
+          className="page-intro ao-top-32"
+        >
+          Hello React
+        </h1>
+      </div>
+    </div>
+  </div>
+</main>
+`;

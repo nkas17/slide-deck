@@ -2,9 +2,12 @@
   "name": "slide-deck",
   "version": "1.0.0",
   "description": "slide deck application - used as a presentation tool to show what it's like to develop the UI with React",
-  "main": "./src/app.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "title slide-deck && webpack-dev-server --config webpack.config.dev.js",
+    "build": "webpack",
+    "lint": "node node_modules/eslint-watch/bin/esw webpack.config.* src --ext js --ext jsx",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,33 @@
   "bugs": {
     "url": "https://github.com/nkas17/slide-deck/issues"
   },
-  "homepage": "https://github.com/nkas17/slide-deck#readme"
+  "homepage": "https://github.com/nkas17/slide-deck#readme",
+  "dependencies": {
+    "react": "16.3.2",
+    "react-dom": "16.3.2",
+    "react-hot-loader": "4.1.2"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.3",
+    "babel-loader": "7.1.4",
+    "babel-preset-env": "1.6.1",
+    "babel-preset-react": "6.24.1",
+    "copy-webpack-plugin": "4.5.1",
+    "css-loader": "0.28.11",
+    "eslint": "4.19.1",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-config-uwm": "2.2.0",
+    "eslint-plugin-import": "2.11.0",
+    "eslint-plugin-jsx-a11y": "6.0.3",
+    "eslint-plugin-react": "7.7.0",
+    "eslint-watch": "3.1.4",
+    "file-loader": "1.1.11",
+    "html-webpack-plugin": "3.2.0",
+    "jest": "22.4.3",
+    "react-test-renderer": "16.3.2",
+    "style-loader": "0.21.0",
+    "webpack": "4.7.0",
+    "webpack-cli": "2.1.2",
+    "webpack-dev-server": "3.1.4"
+  }
 }
