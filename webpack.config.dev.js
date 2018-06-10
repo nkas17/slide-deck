@@ -9,9 +9,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
 	mode: 'development',
 	resolve: {
-		modules: [
-			'node_modules',
-		],
+		modules: ['node_modules'],
 		extensions: ['.js', '.jsx', '.json', '.css'],
 	},
 	entry: [
@@ -39,9 +37,7 @@ module.exports = {
 
 		// Allow for HTML 5 navigation (single page nav without #)
 		historyApiFallback: {
-			rewrites: [
-				{ from: /./, to: '/index.html' },
-			],
+			rewrites: [{ from: /./, to: '/index.html' }],
 		},
 
 		proxy: {
@@ -56,17 +52,12 @@ module.exports = {
 		rules: [
 			{
 				test: /\.jsx?$/,
-				use: [
-					'babel-loader',
-				],
+				use: ['babel-loader'],
 				include: /src/,
 			},
 			{
 				test: /\.css$/,
-				use: [
-					'style-loader',
-					'css-loader',
-				],
+				use: ['style-loader', 'css-loader'],
 			},
 			// { test: /\.json$/, type: 'javascript/auto', loader: 'json-loader' },
 			{

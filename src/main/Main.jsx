@@ -6,9 +6,7 @@ import './main.css';
 // eslint-disable-next-line react/prefer-stateless-function
 class Main extends React.PureComponent {
 	render() {
-		return (
-			<IntroContainer />
-		);
+		return <IntroContainer />;
 	}
 }
 

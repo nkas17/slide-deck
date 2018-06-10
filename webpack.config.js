@@ -9,9 +9,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
 	mode: 'production',
 	resolve: {
-		modules: [
-			'node_modules',
-		],
+		modules: ['node_modules'],
 		extensions: ['.js', '.jsx', '.json', '.css'],
 	},
 	entry: [
@@ -37,17 +35,12 @@ module.exports = {
 		rules: [
 			{
 				test: /\.jsx?$/,
-				use: [
-					'babel-loader',
-				],
+				use: ['babel-loader'],
 				include: /src/,
 			},
 			{
 				test: /\.css$/,
-				use: [
-					'style-loader',
-					'css-loader',
-				],
+				use: ['style-loader', 'css-loader'],
 			},
 			// { test: /\.json$/, type: 'javascript/auto', loader: 'json-loader' },
 			{

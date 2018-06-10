@@ -9,9 +9,7 @@ import IntroView from './IntroView';
 // eslint-disable-next-line react/prefer-stateless-function
 class IntroContainer extends React.PureComponent {
 	render() {
-		return (
-			<IntroView />
-		);
+		return <IntroView />;
 	}
 }
 export default IntroContainer;
