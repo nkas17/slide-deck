@@ -1,0 +1,24 @@
+
+.slide-view {
+	background: #e5e5e5;
+	border: none;
+	padding: 0;
+}
+.slide-view__content {
+	padding: 20px;
+}
+.slide-view__item {
+	margin-bottom: 10px;
+}
+.slide-image{
+	padding-right: 120px;
+	padding-bottom: 20px;
+}
+.slide-heading {
+	background-color: #1ae;
+	padding: 5px;
+	display: block;
+	color: #e5e5e5;
+	padding-top: 15px;
+	padding-left: 20px;
+}
