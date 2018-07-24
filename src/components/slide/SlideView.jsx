@@ -4,7 +4,7 @@ import SlideHeaderContainer from '../slide-header/SlideHeaderContainer';
 
 const SlideView = ({ slide }) => (
 	<section className="slide-view ao-contentbox">
-		<SlideHeaderContainer />
+		<SlideHeaderContainer heading={slide.heading} />
 		<article className="slide-view__content">
 			<ul>
 				{slide.lines.map(line => <li className="slide-view__item">{line}</li>)}

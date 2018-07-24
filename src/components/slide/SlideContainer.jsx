@@ -1,16 +1,18 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import SlideView from './SlideView';
-import slides from './slide-content';
 import './slide.css';
 
 // eslint-disable-next-line react/prefer-stateless-function
 class SlideContainer extends React.Component {
 	render() {
-		return <SlideView slide={slides[0]} />;
+		const { slide } = this.props;
+		return <SlideView slide={slide} />;
 	}
 }
 
-SlideContainer.propTypes = {};
+SlideContainer.propTypes = {
+	slide: PropTypes.objectOf(PropTypes.any),
+};
 
 export default SlideContainer;
